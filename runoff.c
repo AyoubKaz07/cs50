@@ -1,4 +1,4 @@
-#include <cs50.c>
+
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
@@ -67,7 +67,7 @@ int main(int argc , string argv[])
     {
         for ( j = 0 ; j < candidates_count ; j++)
         {
-            string name = get_string("","Rank %i:", j + 1);
+            string name = get_string("Rank %i:", j + 1);
 
             if(!vote(i,j,name))
             {
